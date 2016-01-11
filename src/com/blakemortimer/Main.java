@@ -2,7 +2,7 @@ package com.blakemortimer;
 
 public class Main {
 
-	public static void Main(String[] args) {
+	public static void main(String[] args) {
 		
         Triangle t = new Triangle(2l, 4l, 6l);
         System.out.println(t.dimension());
