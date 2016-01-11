@@ -16,13 +16,14 @@ public class Main {
         System.out.println(ti.dimension());
         System.out.println(ti);
         
+        Triangle tequi = new Triangle(2l, 2l, 2l);
+        System.out.println(tequi.dimension());
+        System.out.println(tequi);
+        
         Triangle trien = new Triangle(2l, 2l, 9l);
         System.out.println(trien.dimension());
         System.out.println(trien);
 
-		
-		
 	}
-
-    
+   
 }
