@@ -78,6 +78,10 @@ public class Triangle {
         return rect1 ||rect2 || rect3;
 
   }
+  
+  public double calculAngle(double a, double c) {
+	  return Math.toDegrees(Math.acos((double)a/c));
+  }
 
   public String toString () {
         String resultat = new String("Triangle");
@@ -85,7 +89,6 @@ public class Triangle {
                return "Vous n'avez pas saisi un triangle";
         }
         else{
-
 
                if (this.equilateral()) { 
                       resultat += " équilatéral";             
@@ -105,6 +108,10 @@ public class Triangle {
 
   public String dimension(){
         return ("les dimensions saisies sont : " +  longueur1  + " "+ longueur2+ " " + longueur3);
+  }
+  
+  public String angle(){
+	  return ("Les angles du triangle sont : " + calculAngle(longueur1, longueur2) + " " +  calculAngle(longueur1, longueur3) + " " + calculAngle(longueur2, longueur3));
   }
 
 
