@@ -25,7 +25,7 @@ public class Main {
         Triangle trien = new Triangle(2l, 2l, 9l);
         System.out.println(trien.dimension());
         System.out.println(trien);
-
 	}
    
 }
+
